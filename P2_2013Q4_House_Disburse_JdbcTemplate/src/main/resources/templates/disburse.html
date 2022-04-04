@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	<table border="1">
+		<tr th:each="hd : ${hdList}">
+			<td><span th:text="${hd.bioGuideID}"></span></td>
+			<td><span th:text="${hd.office}"></span></td>
+			<td><span th:text="${hd.category}"></span></td>
+			<td><span th:text="${hd.payee}"></span></td>
+			<td><span th:text="${hd.startDate}"></span></td>
+			<td><span th:text="${hd.endDate}"></span></td>
+			<td><span th:text="${hd.purpose}"></span></td>
+			<td><span th:text="${hd.amount}"></span></td>
+			<td><span th:text="${hd.year}"></span></td>
+			<td><span th:text="${hd.bioGuideID}"></span></td>
+		</tr>
+	</table>
+	
+</body>
+</html>
