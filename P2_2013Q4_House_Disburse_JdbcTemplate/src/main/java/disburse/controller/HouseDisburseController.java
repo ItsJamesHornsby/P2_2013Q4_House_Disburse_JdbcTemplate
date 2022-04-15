@@ -34,6 +34,14 @@ public class HouseDisburseController {
 		return "disburse.html";
 		
 	}
+	
+	//CodeChallenge 3
+	@RequestMapping("changeCategory")
+	public String updateCategory(Model model) {
+		model.addAttribute("hdList", hdDAO.updateCategory());
+		return "disburse.html";
+	}
+	
 	//Code Challenge 4
 	@GetMapping("highestAmount")
 	public String highestAmount(Model model) {
