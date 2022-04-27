@@ -1,5 +1,7 @@
 package disburse.vo;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+
 public class HouseDisburseDetail {
 	private int recordID;
 	private String bioGuideID;
@@ -9,7 +11,9 @@ public class HouseDisburseDetail {
 	private String startDate;
 	private String endDate;
 	private String purpose;
+	@JsonAlias("AMOUNT")
 	private double amount;
+	@JsonAlias("YEAR")
 	private String year;
 	public int getRecordID() {
 		return recordID;

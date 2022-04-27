@@ -163,7 +163,7 @@ public class HouseDisburseDAO {
 							} else if (argument.getCategory().equals("PERSONNEL COMPENSATION")) {
 								ps.setString(1, "PERSONNEL COMPENSATION");
 								ps.setString(2, "PC");
-							} else if (argument.getCategory().equals("RENT")) {
+							} else if (argument.getCategory().contains("RENT")) {
 								ps.setString(1, "RENT");
 								ps.setString(2, "R");
 							} else if (argument.getCategory().equals("EQUIPMENT")) {
